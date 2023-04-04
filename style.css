@@ -1,85 +1,52 @@
-* {
-    padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;1,100&display=swap');
+
+body{
+    font-family:'Courier New', Courier, monospace;
+    background-color: black;
+    color: white;
+}
+*{
     margin: 0;
-    box-sizing: border-box;
+    padding: 0;
+}
+#search-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 20px 0;
 }
 
-body {
-    padding: 15px;
-    background-color: rgb(27, 27, 27);
-    color: gainsboro;
+#search-input {
+	margin-left: 10px;
 }
-
-.container {
-    overflow-x: hidden;
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cont{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-h2{
-    margin: 10px auto;
-}
-
-#main-image-container {
-    gap: 20px;
-    border: 1px solid gainsboro;
+    justify-content: center;
+    border: 1px solid rgb(109, 109, 109);
     width: 70%;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 15px auto;
 }
 
 #current-image-container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    border-radius: 10px;
-    padding: 20px;
-    gap: 20px;
-}
-a{
-    text-decoration: none;
-    list-style-type: none;
-    color: aliceblue;
+	padding: 20px;
+	margin-bottom: 20px;
 }
 
-.image {
-    width: 75%;
-    margin-left: 25px;
+#current-image-container img {
+	max-width: 100%;
 }
 
-button{
-    width: 80px;
-    height: 30px;
-    border-radius: 6px;
-    font-weight: 700;
-    font-size: large;
+#search-history {
+	list-style: none;
+    cursor: pointer;
+}
+#headingpic{
+    margin-left: 1em;
 }
 
-input{
-    width: 150px;
-    height: 30px;
-    border-radius: 8px;
-    padding: 5px;
-}
-
-@media only screen and (max-width: 767px) {
-    #main-image-container {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        border-radius: 5px;
-        padding: 10px;
-    }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-    #main-image-container {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        border-radius: 5px;
-        padding: 15px;
-    }
-}
